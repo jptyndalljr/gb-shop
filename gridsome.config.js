@@ -45,9 +45,20 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'products/**/*.md',
+        typeName: 'Product',
+        remark: {
+          plugins: []
+        }
+      }
+    },
+    {
       use: 'gridsome-plugin-netlify-cms',
       options: {
-        publicPath: '/admin'
+        publicPath: '/admin',
+        htmlTitle: 'GB Shop Admin'
       }
     },
   ]

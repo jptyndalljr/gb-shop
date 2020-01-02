@@ -5,6 +5,8 @@ import Buefy from 'buefy'
 
 import 'buefy/dist/buefy.css'
 
+import 'victormono'
+
 import '~/assets/styles/main.scss'
 
 import DefaultLayout from '~/layouts/Default.vue'

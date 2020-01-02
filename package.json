@@ -12,7 +12,8 @@
     "buefy": "^0.8.6",
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
-    "netlify-cms": "^2.9.7"
+    "netlify-cms": "^2.9.7",
+    "victormono": "^1.2.9"
   },
   "devDependencies": {
     "node-sass": "^4.13.0",

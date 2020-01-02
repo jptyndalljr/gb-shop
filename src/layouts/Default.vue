@@ -1,14 +1,36 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
-    </header>
+  <div class="container">
+    <b-navbar>
+      <template slot="brand">
+        <b-navbar-item tag="router-link" :to="{ path: '/'}">
+          <g-image alt="Example image" src="~/favicon.png" width="25" />
+        </b-navbar-item>
+      </template> -->
+      <template slot="start">
+        <b-navbar-item tag="router-link" :to="{ path: '/'}">
+          Home
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/about/'}"> 
+          About
+        </b-navbar-item>
+        <b-navbar-dropdown label="Shop">
+          <b-navbar-item>
+            Gameboy
+          </b-navbar-item>
+          <b-navbar-item>
+            Merch
+          </b-navbar-item>
+        </b-navbar-dropdown>
+      </template>
+      <template slot="end">
+        <b-navbar-item>
+          Cart
+        </b-navbar-item>
+        <b-navbar-item>
+          Log in
+        </b-navbar-item>
+      </template>
+    </b-navbar>
     <slot/>
   </div>
 </template>
