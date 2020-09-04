@@ -16,7 +16,7 @@
     "victormono": "^1.2.9"
   },
   "devDependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "sass-loader": "^8.0.0",
     "style-resources-loader": "^1.3.2"
   }
